@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.post("/equipo", async (req, res) => {
+app.post("/equipos", async (req, res) => {
   const {
     nombreEquipo,
     institucion,
