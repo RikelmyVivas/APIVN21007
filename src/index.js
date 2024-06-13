@@ -47,7 +47,7 @@ app.get("/equipos", async (req, res) => {
     });
   }
 });
-app.get("/api/jugadores", async (req, res) => {
+app.get("/jugadores", async (req, res) => {
   try {
     const jugador = await prisma.jugadores.findMany();
     res.status(200).json(jugador);
